@@ -3,10 +3,15 @@
 # find_anagrams("hello", "check") --> False
 # find_anagrams("below", "elbow") --> True
 
-
-def find_anagram(word, anagram):
+def find_anagram():
     # [assignment] Add your code here
+    
+    # Ask the user for their word input
+    word = input("Enter a word \n")
 
+    # Ask the user for the word that they want to check if it is an anagram
+    anagram = input("Enter a another word to see if it is an angram \n")
+    
     # check if the lenght of the word and anagram are the same
     if len(word) == len(anagram):
 
@@ -29,8 +34,6 @@ def find_anagram(word, anagram):
         return False
 
 
-print(find_anagram("hello", "check"))
-
-print(find_anagram("below", "elbow"))
+print(find_anagram())
 
 
